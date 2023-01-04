@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom';
-import logoHeader from '../assets/img/pizza.jpg';
 
+import logoHeader from '../assets/img/pizza.jpg';
 import Search from './Search';
 
-function Header({ searchValue, setSearchValues }) {
+function Header() {
   return (
     <div className="header">
       <div className="container">
@@ -16,7 +16,7 @@ function Header({ searchValue, setSearchValues }) {
             </div>
           </div>
         </NavLink>
-        <Search searchValue={searchValue} setSearchValues={setSearchValues} />
+        <Search />
 
         <div className="header__cart">
           <NavLink to="/cart.html" className="button button--cart">
